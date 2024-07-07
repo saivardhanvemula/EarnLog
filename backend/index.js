@@ -15,7 +15,9 @@ const uri='mongodb+srv://saivardhanvemulamncl:sai7626@projects.dwgzndr.mongodb.n
 
     
 const client = new MongoClient(uri)
-
+app.get("/",()=>{
+    res.send ("hello welcome to server")
+})
 app.post('/new', async (req, res) => {
     try {
         const formdata=req.body
