@@ -1,0 +1,65 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+h1 {
+    margin-top: 0;
+}
+.new {
+    width: 600px;
+    height: 150px;
+    background-color: red;
+}
+.logs {
+    height: 500px;
+    width: auto;
+    background-color: aqua;
+    overflow-y: scroll;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.log {
+    background-color: #007acc;
+    display: flex;
+  /* justify-content: space-around; */
+}
+.details{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log button{
+  text-align: center;
+  margin: auto;
+}
+.log button img{
+  height: 100%;
+}
+  .logs::-webkit-scrollbar {
+    width: 15px;
+}
+
+.logs::-webkit-scrollbar-track {
+    background: #cceeff;
+}
+
+.logs::-webkit-scrollbar-thumb {
+    background-color: #007acc;
+    border-radius: 10px;
+    border: 2px solid #cceeff;
+}
+
+.logs::-webkit-scrollbar-thumb:hover {
+    background-color: #005fa3;
+}
+
+/* Firefox Scrollbar for .logs */
+.logs {
+    scrollbar-color: #007acc #cceeff;
+    scrollbar-width: thin;
+}
