@@ -5,7 +5,7 @@ const { MongoClient } = require('mongodb')
 const app=express()
 app.use(cors())
 app.use(express.json())
-const port =3000
+const port =process.env.PORT || 3000
 
 // const uri = 'mongodb://localhost:27017'
 const uri='mongodb+srv://saivardhanvemulamncl:sai7626@projects.dwgzndr.mongodb.net/?retryWrites=true&w=majority&appName=projects'
